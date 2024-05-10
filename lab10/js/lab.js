@@ -15,8 +15,17 @@ function generateConvo(){
   return text.slice(randStart, randStart + randLen);
 }
 
-// Button Listener
+/* Button Listener
 $("#make-convo").click(function(){
   const newText = generateConvo();
+  $("#output").append("<div='text'><p>" + newText + "</p></div>");
+})
+*/
+
+// TASK X
+$("#make-convo").click(function(){
+  const newText = generateConvo();
+  const userName = window.prompt("What would you like to say?");
+  $("#output").append("<div id='text'><p>" + userName + "</p></div>");
   $("#output").append("<div='text'><p>" + newText + "</p></div>");
 })
