@@ -22,10 +22,20 @@ $("#make-convo").click(function(){
 })
 */
 
-// TASK X
+// TASK X 1 + 2
+ 
 $("#make-convo").click(function(){
   const newText = generateConvo();
   const userName = window.prompt("What would you like to say?");
   $("#output").append("<div id='text'><p>" + userName + "</p></div>");
   $("#output").append("<div='text'><p>" + newText + "</p></div>");
 })
+
+/* TASK X 1
+$("#make-convo").click(function(){
+  const newText = generateConvo();
+  const newResponse = generateConvo();
+  $("#output").append("<div id='text'><p>" + newText + "</p></div>");
+  $("#output").append("<div='text'><p>" + newResponse + "</p></div>");
+})
+*/
