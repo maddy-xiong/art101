@@ -27,7 +27,6 @@ function getFactorObj() {
 
 function fizzBuzzBoom(maxNums, factorObj) {
   for (let num = 0; num <= maxNums; num++) {
-      debugger;
       let outputStr = "";
       for (let factor in factorObj) {
           if (num % factor == 0) {
